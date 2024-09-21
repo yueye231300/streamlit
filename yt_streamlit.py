@@ -92,3 +92,7 @@ font="monospace"
 
 number = st.sidebar.slider('Select a number:', 0, 10, 5)
 st.write('Selected number from slider widget is:', number)
+
+st.subheader('st.secrets')
+
+st.write(st.secrets['message'])
