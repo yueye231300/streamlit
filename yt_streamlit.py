@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import time, datetime
 import pandas as pd
 import numpy as np
-import time as times
+
 
 st.set_page_config(layout="wide")
 st.header('st.slider')
@@ -129,7 +129,7 @@ with st.expander('About this app'):
 
 my_bar = st.progress(0)
 for percent_complete in range(100):
-     times.sleep(0.05)
+     time.sleep(0.05)
      my_bar.progress(percent_complete + 1)
 
 st.balloons()
