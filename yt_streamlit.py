@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import time, datetime
 import pandas as pd
 import numpy as np
-
+import time
 
 st.set_page_config(layout="wide")
 st.header('st.slider')
@@ -122,3 +122,16 @@ with col3:
           st.write(f'🍴 **{user_food}** is your favorite **food**!')
      else:
           st.write('👈 Please choose your favorite **food**!')
+
+st.subheader('st.progress')
+
+with st.expander('About this app'):
+     st.write('You can now display the progress of your calculations in a Streamlit app with the `st.progress` command.')
+
+
+my_bar = st.progress(0)
+for percent_complete in range(100):
+     time.sleep(0.05)
+     my_bar.progress(percent_complete + 1)
+
+st.balloons()
