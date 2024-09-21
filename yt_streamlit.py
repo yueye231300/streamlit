@@ -42,3 +42,12 @@ st.line_chart(chart_data)
 st.subheader('select box')
 options = st.selectbox('选择一个你喜欢的颜色', ['green', 'blue', 'red'])
 st.write('Your favorite color is ', options)
+
+
+st.subheader('multiselect')
+options = st.multiselect(
+     'What are your favorite colors',
+     ['Green', 'Yellow', 'Red', 'Blue'],
+     ['Yellow', 'Red'],
+     ['黄色', '蓝色', '绿色'])
+st.write('You selected:', options)
