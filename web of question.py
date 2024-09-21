@@ -1,3 +1,4 @@
 import streamlit as st
 
-st.header('刷题网站捏')
+st.set_page_config(layout="wide")
+st.header('st.slider')
