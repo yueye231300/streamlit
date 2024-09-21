@@ -38,3 +38,7 @@ chart_data = pd.DataFrame(
      columns=['a', 'b', 'c'])
 
 st.line_chart(chart_data)
+
+st.subheader('select box')
+options = st.selectbox('选择一个你喜欢的颜色', ['green', 'blue', 'red'])
+st.write('Your favorite color is ', options)
