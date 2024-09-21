@@ -48,6 +48,5 @@ st.subheader('multiselect')
 options = st.multiselect(
      'What are your favorite colors',
      ['Green', 'Yellow', 'Red', 'Blue'],
-     ['Yellow', 'Red'],
-     ['黄色', '蓝色', '绿色'])
+     ['Yellow', 'Red'])
 st.write('You selected:', options)
