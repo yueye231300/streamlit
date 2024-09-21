@@ -41,13 +41,5 @@ add_siderbar = st.sidebar.selectbox('Aggregate or Individual Video', ('Aggregate
 # total picture
 if add_siderbar == 'Aggregate Metrics':
     st.write("Ken Jee YouTube Aggregated Data")
-    df_agg_metrics = df_agg[['Video publish time','Views','Likes','Subscribers','Shares','Comments added','RPM(USD)','Average % viewed',
-                             'Avg_duration_sec', 'Engagement_ratio','Views / sub gained']]
-    metric_date_6mo = df_agg_metrics['Video publish time'].max() - pd.DateOffset(months =6)
-    metric_date_12mo = df_agg_metrics['Video publish time'].max() - pd.DateOffset(months =12)
-    metric_medians6mo = df_agg_metrics[df_agg_metrics['Video publish time'] >= metric_date_6mo].median()
-    metric_medians12mo = df_agg_metrics[df_agg_metrics['Video publish time'] >= metric_date_12mo].median()
-
-    st.metric('views',metric_medians6mo['Views'])
 if add_siderbar == 'Individual Video Analysis':
     st.write('Ind')
