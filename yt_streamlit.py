@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import time, datetime
 import pandas as pd
 import numpy as np
-
+import time
 
 st.set_page_config(layout="wide")
 st.header('st.slider')
@@ -27,11 +27,11 @@ st.write("You're scheduled for:", appointment)
 
 st.subheader('Datetime slider')
 
-start_time = st.slider(
-     "When do you start?",
-     value=datetime(2020, 1, 1, 9, 30),
-     format="MM/DD/YY - hh:mm")
-st.write("Start time:", start_time)
+# start_time = st.slider(
+#      "When do you start?",
+#      value=datetime(2020, 1, 1, 9, 30),
+#      format="MM/DD/YY - hh:mm")
+# st.write("Start time:", start_time)
 
 
 st.subheader('chart line')
