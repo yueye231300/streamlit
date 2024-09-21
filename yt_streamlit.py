@@ -70,4 +70,3 @@ if coffee:
 
 if cola:
      st.write("Here you go 🥤")
-
