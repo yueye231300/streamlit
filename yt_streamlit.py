@@ -1,6 +1,4 @@
-
 import streamlit as st
-
 
 add_siderbar = st.sidebar.selectbox('Aggregate or Individual Video', ('Aggregate Metrics', 'Individual Video Analysis'))
 
