@@ -123,7 +123,8 @@ with col3:
      else:
           st.write('👈 Please choose your favorite **food**!')
 
-st.subheader('st.progress')
+
+
 
 with st.expander('About this app'):
      st.write('You can now display the progress of your calculations in a Streamlit app with the `st.progress` command.')
