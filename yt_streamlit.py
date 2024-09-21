@@ -50,3 +50,20 @@ options = st.multiselect(
      ['Green', 'Yellow', 'Red', 'Blue','黄色'],
      ['Yellow', 'Red'])
 st.write('You selected:', options)
+
+
+st.subheader('checkbox')
+st.write ('What would you like to order?')
+
+icecream = st.checkbox('Ice cream')
+coffee = st.checkbox('Coffee')
+cola = st.checkbox('Cola')
+
+if icecream:
+     st.write("Great! Here's some more 🍦")
+
+if coffee:
+     st.write("Okay, here's some coffee ☕")
+
+if cola:
+     st.write("Here you go 🥤")
