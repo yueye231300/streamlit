@@ -81,7 +81,6 @@ st.latex(r'''
 
 st.write('Contents of the `.streamlit/config.toml` file of this app')
 
-
 st.code("""
 [theme]
 primaryColor="#F39C12"
